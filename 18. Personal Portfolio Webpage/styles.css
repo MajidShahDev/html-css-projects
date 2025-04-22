@@ -1,0 +1,345 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  /* overflow: hidden; */
+}
+
+header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: hsl(225, 67%, 1%, 0.9);
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 1;
+}
+
+#navbar {
+  position: fixed;
+  /* width: 100%; */
+}
+nav a {
+  text-decoration: none;
+  padding: 1.3em;
+  color: white;
+}
+
+nav a:hover {
+  color: hsl(225, 67%, 1%);
+  background-color: hsl(225, 99%, 90%);
+  cursor: pointer;
+}
+
+nav a:active {
+  background-color: hsl(225, 99%, 80%);
+  color: hsl(225, 67%, 1%);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+#nav-items {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  padding-right: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  font-size: 1srem;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: hsl(225, 67%, 1%, 0.1);
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  list-style: none;
+  border-top: 0.1rem solid hsl(0, 0%, 0%);
+  border-bottom: 0.1rem solid hsl(0, 0%, 0%);
+}
+
+/* WELCOME SECTION */
+
+.marker {
+  width: 350px;
+  height: 3px;
+  margin: auto;
+  background-color: hsl(225, 99%, 70%);
+}
+
+.marker-1 {
+  width: 215px;
+  height: 5px;
+  margin: auto;
+  background-color: hsl(225, 99%, 70%);
+  margin-bottom: 10px;
+}
+
+#welcome-section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(0, 0%, 0%, 0.6);
+  color: white;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  margin-top: -4px;
+  padding-bottom: 0.1em;
+  font-weight: 700;
+  font-size: 2.4em;
+  letter-spacing: 0.1rem;
+  color: hsl(225, 99%, 90%);
+}
+
+#welcome-section h3 {
+  color: hsl(225, 99%, 75%);
+  /* color: hsl(150, 99%, 65%); */
+  padding-bottom: 0.4em;
+  font-weight: 700;
+  font-size: 1.6em;
+  padding: 0px 1em;
+  letter-spacing: 0.1rem;
+}
+
+.skills {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 0.4px;
+  padding: 0px 1em;
+  color: hsl(225, 99%, 95%);
+}
+.description {
+  margin-top: 0.7em;
+  padding: 0px 1em;
+  font-size: 1.03em;
+  font-style: italic;
+  color: hsl(225, 99%, 85%);
+  letter-spacing: 0.4px;
+}
+
+.container {
+  position: relative;
+  top: -1.5em;
+}
+
+.bg-image {
+  background-image: url("https://img.freepik.com/free-photo/3d-rendering-hexagonal-texture-background_23-2150796417.jpg?t=st=1738155204~exp=1738158804~hmac=fa99ddc54eba357c278b43004947c2181fa2dce7a2159e943ea85e98518a0cca&w=996");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* // PROJECT SECTION */
+#projects-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5em;
+  background-color: hsl(225, 99%, 95%);
+}
+
+#projects-container h1 {
+  margin: 1.5em 0;
+  color: hsl(225, 15%, 5%);
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 40px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #projects {
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 30px;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+  }
+
+  .projects {
+    max-height: 300px;
+  }
+}
+@media (max-width: 550px) {
+  #projects {
+    grid-template-columns: repeat(1, 250px);
+    grid-gap: 20px;
+  }
+  .projects {
+    max-height: 300px;
+  }
+
+  .project-tile {
+    position: relative;
+    top: -10px;
+  }
+}
+
+.projects {
+  height: 350px;
+  font-weight: bold;
+  /* color: hsl(0, 0%, 10%); */
+  box-sizing: border-box;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 1em;
+  margin-bottom: 2.5em;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#p-1,
+#p-2,
+#p-3 {
+  margin-top: 0.9em;
+  position: relative;
+  top: -6px;
+  background-color: hsl(225, 25%, 25%);
+  color: hsl(0, 0%, 90%);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#projects a {
+  color: hsl(0, 0%, 10%);
+  text-decoration: none;
+}
+
+.mark {
+  position: relative;
+  top: 35px;
+  width: 300px;
+  height: 3px;
+  margin: auto;
+  /* background-color: hsl(0, 0%, 15%); */
+  background-color: hsl(225, 15%, 15%);
+}
+
+.mark-1 {
+  position: relative;
+  top: 35px;
+  width: 100px;
+  height: 5px;
+  margin: auto;
+  background-color: hsl(225, 15%, 15%);
+  /* background-color: hsl(0, 0%, 15%); */
+  margin-bottom: 10px;
+}
+
+.github-link {
+  /* width: min(300px, 100%); */
+  width: 250px;
+  cursor: pointer;
+  padding: 15px 15px;
+  color: hsl(0, 0%, 90%);
+  letter-spacing: 1px;
+  margin-top: 1em;
+  font-size: 1em;
+  background-color: hsl(225, 35%, 30%);
+  border: 3px solid hsl(225, 35%, 50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.github-link:hover {
+  background-color: hsl(225, 35%, 25%);
+  border: 3px solid hsl(225, 35%, 45%);
+}
+.github-link:active {
+  background-color: hsl(225, 35%, 23%);
+  border: 3px solid hsl(225, 35%, 43%);
+}
+
+/* CONTACT SECTION */
+
+.mark-ftr {
+  width: 100vw;
+  /* height: 10px; */
+  /* background-color: hsl(225, 99%, 60%); */
+}
+.mark-c {
+  width: 300px;
+  height: 3px;
+  background-color: hsl(225, 99%, 70%);
+}
+
+.mark-c1 {
+  width: 100px;
+  height: 5px;
+  background-color: hsl(225, 99%, 70%);
+  margin-bottom: 10px;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  background-color: hsl(230, 100%, 5%);
+  /* color: hsl(225, 99%, 95%); */
+  color: hsl(225, 99%, 90%);
+  padding: 4em 0 6em 0;
+}
+
+#contact h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-size: min(300px, 100%);  */
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  letter-spacing: 0.15vw;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.8em;
+}
+
+#contact p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+a {
+  text-decoration: none;
+}
+
+#email,
+#whatsapp,
+#linkedIn {
+  display: flex;
+  color: hsl(225, 99%, 90%);
+}
+
+.fa-envelope,
+.fa-whatsapp,
+.fa-linkedin {
+  margin-right: 0.5em;
+  position: relative;
+  top: 3px;
+}

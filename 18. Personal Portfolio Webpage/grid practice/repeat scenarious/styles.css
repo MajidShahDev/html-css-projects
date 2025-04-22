@@ -1,0 +1,71 @@
+.grid-container {
+  display: grid;
+
+  /* Scenario 1: Basic repeat with fr */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+}
+
+.grid-container-2 {
+  display: grid;
+
+  /* Scenario 2: repeat with minmax() */
+  grid-template-columns: repeat(
+    3,
+    minmax(150px, 300px)
+  ); /* 3 columns with widths between 150px and 300px */
+}
+
+.grid-container-3 {
+  display: grid;
+
+  /* Scenario 3: repeat with clamp() */
+  grid-template-columns: repeat(
+    3,
+    clamp(100px, 20vw, 300px)
+  ); /* 3 columns that scale with viewport width */
+}
+
+.grid-container-4 {
+  display: grid;
+
+  /* Scenario 4: repeat with fr and minmax() */
+  grid-template-columns: repeat(2, 1fr) minmax(200px, 400px); /* 2 equal-width columns + flexible column */
+}
+
+.grid-container-5 {
+  display: grid;
+
+  /* Scenario 5: repeat with fr and clamp() */
+  grid-template-columns: repeat(3, 1fr) clamp(100px, 20vw, 300px); /* 3 equal-width columns + dynamic column */
+}
+
+.grid-container-6 {
+  display: grid;
+
+  /* Scenario 6: repeat with minmax() and fr */
+  grid-template-columns: repeat(2, minmax(100px, 1fr)) clamp(150px, 20vw, 300px); /* 2 flexible columns + dynamic column */
+}
+
+.grid-container-7 {
+  display: grid;
+
+  /* Scenario 7: repeat with mixed fr, minmax(), and clamp() */
+  grid-template-columns: repeat(2, minmax(150px, 1fr)) clamp(150px, 20vw, 300px); /* Mixed fr, minmax(), and clamp() */
+}
+
+.grid-container-8 {
+  display: grid;
+
+  /* Scenario 8: repeat with multiple columns and minmax() */
+  grid-template-columns: repeat(
+    4,
+    minmax(100px, 1fr)
+  ); /* 4 columns with a range from 100px to 1fr */
+}
+
+.grid-container-9 {
+  display: grid;
+
+  /* Scenario 9: Combining repeat() with fr, minmax(), and clamp() */
+  grid-template-columns: repeat(2, minmax(clamp(100px, 10vw, 150px), 1fr)) 2fr; /* 2 flexible columns + 2fr column */
+}

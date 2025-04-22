@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JS Technical Documentation</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div class="border"></div>
+      <header>JS Documentation</header>
+      <ul>
+        <a class="nav-link" href="#Introduction"><li>Introduction</li></a>
+        <a class="nav-link" href="#Variables"><li>Variables</li></a>
+        <a class="nav-link" href="#Arrays"><li>Arrays</li></a>
+        <a class="nav-link" href="#Objects"><li>Objects</li></a>
+        <a class="nav-link" href="#Functions"><li>Functions</li></a>
+        <a class="nav-link" href="#Value"><li>Value</li></a>
+        <a class="nav-link" href="#Operators"><li>Operators</li></a>
+        <a class="nav-link" href="#Conditional_Statement"
+          ><li>Conditional Statement</li></a
+        >
+        <a class="nav-link" href="#Loops"><li>Loops</li></a>
+        <a class="nav-link" href="#Classes"><li>Classes</li></a>
+        <a class="nav-link" href="#Arrow_Function"><li>Arrow Function</li></a>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header class="intro">Introduction</header>
+        <article>
+          JavaScript is one of the most popular programming languages in the
+          world. I believe it's a great language to be your first programming
+          language ever. We mainly use JavaScript to create
+          <ul>
+            <li>websites</li>
+            <li>web applications</li>
+            <li>server-side applications using Node.js</li>
+          </ul>
+
+          <p>
+            but JavaScript is not limited to these things, and it can also be
+            used to
+          </p>
+          <ul>
+            <li>create mobile applications using tools like React Native</li>
+            <li>
+              create programs for microcontrollers and the internet of things
+            </li>
+            <li>create smartwatch applications</li>
+          </ul>
+
+          <p>
+            It can basically do anything. It's so popular that everything new
+            that shows up is going to have some kind of JavaScript integration
+            at some point.
+          </p>
+        </article>
+      </section>
+
+      <section id="Variables" class="main-section">
+        <header>Variables</header>
+        <article>
+          <p>
+            A variable is a value assigned to an identifier, so you can
+            reference and use it later in the program.
+          </p>
+          <p>
+            is because JavaScript is loosely typed, a concept you'll frequently
+            hear about.
+          </p>
+          <p>A variable must be declared before you can use it.</p>
+          <p>
+            We have 2 main ways to declare variables. The first is to use const
+            :
+          </p>
+          <code>const a = 0</code>
+          <p>The second way is to use let :</p>
+          <code>let a = 0</code>
+          <p>What's the difference?</p>
+          <p>
+            defines a constant reference to a value. This means the reference
+            cannot be changed. You cannot reassign a new value to it.
+          </p>
+          <p>Using let you can assign a new value to it.</p>
+          <p>For example, you cannot do this:</p>
+          <code>onst a = 0</code>
+          <code>a = 1</code>
+          <p>
+            Because you'll get an error: TypeError: Assignment to constant
+            variable.
+          </p>
+          <p>On the other hand, you can do it using let :</p>
+          <code>let a = 0</code>
+          <code>a = 1</code>
+        </article>
+      </section>
+
+      <section id="Arrays" class="main-section">
+        <header>Arrays</header>
+        <article>
+          <p>An array is a collection of elements.</p>
+          <p>Arrays in JavaScript are not a type on their own.</p>
+          <p>Arrays are objects.</p>
+          <p>We can initialize an empty array in these 2 different ways:</p>
+          <code>
+            const a = []<br />
+            const a = Array()<br />
+          </code>
+          <p>
+            The first is using the array literal syntax. The second uses the
+            Array built- in function.
+          </p>
+          <p>You can pre-fill the array using this syntax:</p>
+          <code>
+            const a = [1, 2, 3]<br />
+            const a = Array.of(1, 2, 3)
+          </code>
+        </article>
+      </section>
+
+      <section id="Objects" class="main-section">
+        <header>Objects</header>
+        <article>
+          <p>
+            Any value that's not of a primitive type (a string, a number, a
+            boolean, a symbol, null, or undefined) is an object.
+          </p>
+          <p>Here's how we define an object:</p>
+          <code>const car = {}</code>
+          <p>
+            This is the object literal syntax, which is one of the nicest things
+            in JavaScript.
+          </p>
+          <p>You can also use the new Object syntax:</p>
+          <code>const car = new Object()</code>
+          <p>Another syntax is to use Object.create() :</p>
+          <code>const car = Object.create()</code>
+        </article>
+      </section>
+
+      <section id="Functions" class="main-section">
+        <header>Functions</header>
+        <article>
+          <p>
+            In any moderately complex JavaScript program, everything happens
+            inside functions.
+          </p>
+          <p>Functions are a core, essential part of JavaScript.</p>
+          <p>What is a function?</p>
+          <p>A function is a block of code, self-contained.</p>
+          <p>Here's a function declaration:</p>
+          <code>
+            function getData() {<br />
+            // do something<br />
+            }
+          </code>
+          <p>
+            A function can be run any time you want by invoking it, like this:
+          </p>
+          <code>getData()</code>
+        </article>
+      </section>
+
+      <section id="Value" class="main-section">
+        <header>Value</header>
+        <article>
+          <p>A hello string is a value. A number like 12 is a value.</p>
+          <p>
+            hello and 12 are values. string and number are the types of those
+            values.
+          </p>
+          <p>
+            The type is the kind of value, its category. We have many different
+            types in JavaScript, and we'll talk about them in detail later on.
+            Each type has its own characteristics.
+          </p>
+          <p>
+            When we need to have a reference to a value, we assign it to a
+            variable. The variable can have a name, and the value is what's
+            stored in a variable, so we can later access that value through the
+            variable name.
+          </p>
+        </article>
+      </section>
+
+      <section id="Operators" class="main-section">
+        <header>Operators</header>
+        <article>
+          <p>
+            Operators allow you to get two simple expressions and combine them
+            to form a more complex expression.
+          </p>
+          <p>
+            We can classify operators based on the operands they work with. Some
+            operators work with 1 operand. Most with 2 operands. Just one
+            operator works with 3 operands.
+          </p>
+          <p>
+            We can classify operators based on the operands they work with. Some
+            In this first introduction to operators, we'll introduce the
+            operators you are most likely familiar with: binary operators.
+          </p>
+          <p>
+            We can classify operators based on the operands they work with. Some
+            I already introduced one when talking about variables: the
+            assignment operator = . You use = to assign a value to a variable:
+          </p>
+          <code>let b = 2</code>
+          <p>
+            We can classify operators based on the operands they work with. Some
+            Let's now introduce another set of binary operators that you are
+            already familiar with, from basic math.
+          </p>
+        </article>
+      </section>
+
+      <section id="Conditional_Statement" class="main-section">
+        <header>Conditional Statement</header>
+        <article class="indent">
+          <h3>If</h3>
+          <p>
+            An if statement is used to make the program take a route, or
+            another, depending on the result of an expression evaluation.
+          </p>
+          <p>This is the simplest example, which always executes:</p>
+          <code>
+            if (true) {<br />
+            //do something<br />
+            }
+          </code>
+          <code>
+            on the contrary, this is never executed:<br />
+            if (false) {<br />
+            //do something (? never ?)<br />
+            }
+          </code>
+
+          <h3>Else</h3>
+          <p>You can provide a second part to the if statement: else.</p>
+          <p>
+            You attach a statement that is going to be executed if the if
+            condition is
+          </p>
+          <code>
+            false:<br />
+            if (true) {<br />
+            //do something<br />
+            } else {<br />
+            //do something else<br />
+            }
+          </code>
+        </article>
+      </section>
+
+      <section id="Loops" class="main-section">
+        <header>Loops</header>
+        <article>
+          <p>Loops are one of the main control structures of JavaScript.</p>
+          <p>
+            With a loop we can automate and repeat indefinitely a block of code,
+            for how many times we want it to run.
+          </p>
+          <p>JavaScript provides many ways to iterate through loops.</p>
+          <p>I want to focus on 3 ways:</p>
+          <ul>
+            <li>while loops</li>
+            <li>for loops</li>
+            <li>for..of loops</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="Classes" class="main-section">
+        <header>Classes</header>
+        <article>
+          <p>
+            What are classes? They are a way to define a common pattern for
+            multiple objects.
+          </p>
+          <p>Let's take a person object:</p>
+          <code>
+            const person = {<br />
+            name: 'Flavio',<br />
+            }
+          </code>
+          <code>
+            We can create a class named Person (note the capital P , a
+            convention<br />
+            when using classes), that has a name property:<br />
+            class Person {<br />
+            name<br />
+            }<br />
+          </code>
+        </article>
+      </section>
+
+      <section id="Arrow_Function" class="main-section">
+        <header>Arrow Function</header>
+        <article>
+          <p>Arrow functions are a recent introduction to JavaScript.</p>
+          <p>
+            They are very often used instead of "regular" functions, the one I
+            described in the previous chapter. You'll find both forms used
+            everywhere.
+          </p>
+          <p>
+            Visually, they allow you to write functions with a shorter syntax,
+            from:
+          </p>
+          <code>
+            function getData() {<br />
+            //...<br />
+            }<br />
+            to<br />
+            ;() => {<br />
+            //...<br />
+            }
+          </code>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

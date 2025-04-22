@@ -1,0 +1,120 @@
+label {
+  display: block;
+  margin: 10px auto;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  max-width: 600px;
+  min-width: 300px;
+  margin: 3em auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-indent: 0.2em;
+  background-image: url("https://images.unsplash.com/photo-1526925539332-aa3b66e35444?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80");
+  background-color: rgba(12, 12, 12, 100%);
+  background-size: cover;
+}
+
+.description {
+  text-align: center;
+  font-size: 17px;
+  font-style: italic;
+}
+
+fieldset {
+  border-color: rgba(12, 12, 12, 10%);
+  margin: 10px auto;
+  background-color: rgba(12, 12, 12);
+  border-radius: 7px;
+  padding: 10 30;
+  opacity: 95%;
+}
+
+textarea {
+  margin: 5px auto;
+  border-radius: 5px;
+  width: 96.6%;
+  font-family: sans-serif;
+  text-indent: 0.5em;
+  padding: 0.5em;
+  font-size: 15px;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 98.5%;
+  margin: 5px auto;
+  min-height: 2.5em;
+  border-radius: 5px;
+  text-indent: 0.5em;
+  font-size: 15px;
+  border: none;
+}
+
+input[type="email"] {
+  width: 98.5%;
+  margin: 5px auto;
+  min-height: 2.5em;
+  border-radius: 5px;
+  text-indent: 0.5em;
+  font-size: 15px;
+  border: none;
+}
+
+input[type="number"] {
+  width: 98.5%;
+  margin: 5px auto;
+  min-height: 2.5em;
+  border-radius: 5px;
+  text-indent: 0.5em;
+  font-size: 15px;
+  opacity: 100%;
+  border: none;
+}
+
+input[type="submit"] {
+  width: 40%;
+  margin: 1em auto;
+  display: block;
+  height: 2.5em;
+  background-color: rgba(0, 120, 0, 1);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border-radius: 5px;
+  opacity: 90%;
+  font-weight: bold;
+  border-color: rgba(12, 12, 12, 0.1%);
+}
+
+h4 {
+  font-style: italic;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+select {
+  width: 100%;
+  margin: 5px auto;
+  min-height: 2.5em;
+  border-radius: 5px;
+  text-indent: 0.5em;
+  color: black;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  margin: 0px 3px 0px 0px;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  transform: translateY(0.075em);
+  border-radius: 0.15em;
+}

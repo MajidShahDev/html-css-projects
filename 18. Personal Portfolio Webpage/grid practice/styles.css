@@ -1,0 +1,15 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(100px, 300px)
+  ); /* Minimum 150px, Maximum 300px */
+  gap: clamp(10px, 1vw, 30px); /* Dynamic gap between items */
+}
+
+.grid-item {
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+}
